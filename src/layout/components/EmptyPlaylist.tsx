@@ -7,10 +7,10 @@ const EmptyPlaylistCard = styled(Card)(({ theme }) => ({
   borderRadius: "8px",
 }));
 
-const CreatePlaylistButton = styled(Button)({
+const CreatePlaylistButton = styled(Button)(({ theme }) => ({
   marginTop: "20px",
   fontWeight: "700",
-});
+}));
 
 export const EmptyPlaylist = () => {
   return (
@@ -19,7 +19,9 @@ export const EmptyPlaylist = () => {
         Create your first playlist
       </Typography>
       <Typography variant="body2">It's easy, we'll help you</Typography>
-      <CreatePlaylistButton>Create playlist</CreatePlaylistButton>
+      <CreatePlaylistButton variant="contained" color="secondary">
+        Create playlist
+      </CreatePlaylistButton>
     </EmptyPlaylistCard>
   );
 };

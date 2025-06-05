@@ -16,7 +16,7 @@ const LibraryHead: React.FC = () => {
     >
       <BookmarkIcon />
       <Typography variant="h2" fontWeight={700}>
-        Your Library
+        Your library
       </Typography>
       <Button>
         <AddIcon sx={{ color: "#1DB954" }} />
